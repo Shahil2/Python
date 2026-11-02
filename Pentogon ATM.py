@@ -9,21 +9,22 @@ if pin==1234:
     print("2.Malayalam")
     print("3.Hindi")
     lang=int(input())
-    while option!=3:
-        option=int(input("Select Option\n1.Balance\n2.Withdraw\n3.Exit\n" ))
-        if option==1:
-            print(f"Balance is : {bal}")
-        elif option==2:
-            amount = int(input("Enter the Amount:"))
-            if bal<amount:
-                print("Insufficent Balance")
-                break
-            bal = bal - amount
-            print(f"Withdraw complete Balance {bal}")
-        elif option==3:
-            break
+    option=int(input("Select Option\n1.Balance\n2.Withdraw\n3.Exit\n" ))
+    if option==1:
+        print(f"Balance is : {bal}")
+        print("Thanks for Visiting")
+    elif option==2:
+        amount = int(input("Enter the Amount:"))
+        if amount % 500 != 0:
+            print("Error: Amount must be in multiples of 500 (e.g., 500, 1000, 1500).")
+        elif bal < amount:
+            print("Insufficient Balance")
         else:
-            print("Enter a valid option:")
+            bal = bal - amount
+            print(f"Withdraw complete. Remaining Balance: {bal}")
+            print("Thanks for Visiting")
+    else:
+        print("Enter a valid option:")
 else:
         print("Wrong PIN \nTry again ")
 
