@@ -13,7 +13,7 @@ if card==1:
                 print("Thanks for Visiting")
             elif option == 2:
                 amount = int(input("Enter the Amount:"))
-                if amount % 500 != 0:
+                if amount % 100 != 0:
                     print("Error: Amount must be in multiples of 500 (e.g., 500, 1000, 1500).")
                 elif bal < amount:
                     print("Insufficient Balance")
