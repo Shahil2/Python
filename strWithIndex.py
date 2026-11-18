@@ -1,0 +1,13 @@
+str="RajaRamMohanRoy"
+print(len(str))
+print('0:R 1:a 2:j 3:a 4:R 5:a 6:m 7:M 8:o 9:h 10:a 11:n 12:R 13:o 14:y ')
+# print(str[11])
+# print(str[2:8])
+# print(str[2:12:2])
+# print(str[-1:9])
+# print(str[-2:-7:-1])
+# print(str[-8:-2])
+print(str[-3:-14:-2])
+# print(str[-12:12])
+# print(str[::])
+print(str[::-1])
