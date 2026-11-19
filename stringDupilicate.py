@@ -1,4 +1,4 @@
-str=input("Enter a name:")
+str=input("Enter a String:")
 str1=""
 for i in str:
     if i not in str1:
