@@ -1,7 +1,7 @@
 para=input("Enter a sentance:")
 
-pararev=""
+paraRev=""
 for i in para.split(" "):
-    pararev = i+" "+pararev
-print(pararev)
+    paraRev = i+" "+paraRev
+print(paraRev)
 
