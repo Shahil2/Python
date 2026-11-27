@@ -19,7 +19,7 @@ print(add())
 def add(a,b):
     c = a + b
     print(c)
-print(add(10,20))
+add(10,20)
 
 # with Parameter with Return
 def add(a,b):
